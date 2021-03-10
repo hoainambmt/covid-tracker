@@ -1,0 +1,65 @@
+.main-card {
+    margin: 20px;
+    color: blue($color: #000000);
+
+    .updated {
+        text-align: end;
+        margin-right: 10px;
+        color: #7f8fa6;
+        font-size: 12px;
+        label {
+            font-weight: 600;
+        }
+    }
+    .mat-card-avatar {
+        width: 0 !important;
+        height: 0 !important;
+    }
+    .confirm {
+        background-color: #e74c3c;
+        color: #ecf0f1;
+        text-align: left;
+        padding: 15px;
+        border-radius: 2px;
+        margin: 15px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    }
+
+    .deaths {
+        background-color: #95a5a6;
+        color: #ecf0f1;
+        text-align: left;
+        padding: 15px;
+        border-radius: 2px;
+        margin: 15px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    }
+    .recovered {
+        background-color: #3498db;
+        color: #ecf0f1;
+        text-align: left;
+        padding: 15px;
+        border-radius: 2px;
+        margin: 15px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    }
+
+    .info {
+        .new {
+            mat-icon {
+                vertical-align: middle;
+            }
+        }
+        .total {
+            padding-bottom: 10px;
+            .text {
+                font-size: 12px;
+                font-weight: 500;
+            }
+            .number {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}

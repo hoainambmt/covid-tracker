@@ -1,0 +1,46 @@
+<mat-card class="main-card">
+	<mat-card-header>
+		<mat-card-title>{{cardTile}}</mat-card-title>
+	</mat-card-header>
+	<mat-card-content>
+
+		<div fxLayout="row" class="info">
+			<div [fxFlex]="30" fxLayout="column" class="confirm">
+				<div class="total" fxLayout="column">
+					<label class="number"> {{detailCountry.TotalConfirmed | number}}</label>
+					<label class="text">Confirmed</label>
+				</div>
+				<div class="new">
+					<mat-icon>fiber_new</mat-icon>
+					{{detailCountry.NewConfirmed | number}}
+				</div>
+
+			</div>
+
+			<div [fxFlex]="33" fxLayout="column" class="deaths">
+				<div class="total" fxLayout="column">
+					<label class="number">{{detailCountry.TotalDeaths | number}}</label>
+					<label class="text">Deaths</label>
+				</div>
+				<div class="new">
+					<mat-icon>fiber_new</mat-icon>
+					{{detailCountry.NewDeaths | number}}
+				</div>
+			</div>
+
+			<div [fxFlex]="33" fxLayout="column" class="recovered">
+				<div class="total" fxLayout="column">
+					<label class="number">{{detailCountry.TotalRecovered | number}}</label>
+					<label class="text">Recovered</label>
+				</div>
+				<div class="new">
+					<mat-icon>fiber_new</mat-icon>
+					{{detailCountry.NewRecovered | number}}
+				</div>
+			</div>
+		</div>
+
+		<div class="updated"><label>Updated:</label> {{detailCountry.Date | date:'medium'}}</div>
+
+	</mat-card-content>
+</mat-card>
