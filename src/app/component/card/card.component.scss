@@ -50,6 +50,13 @@
                 vertical-align: middle;
             }
         }
+        @media screen and (max-width: 600px) {
+            .total {
+                .number {
+                    font-size: 12px  !important;
+                }
+            }
+        }
         .total {
             padding-bottom: 10px;
             .text {
