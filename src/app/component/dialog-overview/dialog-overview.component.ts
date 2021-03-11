@@ -1,5 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { MAT_DIALOG_DATA } from '@angular/material';
+import { CountryData } from 'src/app/model/country-data.model';
 import { CardComponent } from '../card/card.component';
 
 @Component({
@@ -10,14 +11,10 @@ import { CardComponent } from '../card/card.component';
 export class DialogOverviewComponent extends CardComponent implements OnInit {
 
   constructor(
-    public dialogRef: MatDialogRef<DialogOverviewComponent>,
-    @Inject(MAT_DIALOG_DATA) public data) {
+    // public dialogRef: MatDialogRef<DialogOverviewComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: CountryData) {
     super();
     this.detailCountry = data;
-  }
-
-  onNoClick(): void {
-    this.dialogRef.close();
   }
 
   ngOnInit() {

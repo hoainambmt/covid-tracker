@@ -1,5 +1,4 @@
-import { Component, Inject, Input, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material';
+import { Component, Input, OnInit } from '@angular/core';
 import { CountryData } from 'src/app/model/country-data.model';
 
 @Component({

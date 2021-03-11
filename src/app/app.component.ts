@@ -3,7 +3,6 @@ import { MatDialog } from '@angular/material';
 import { CountryData } from './model/country-data.model';
 import { CovidData } from './model/covid-data.model';
 import { DataService } from './service/data.service';
-import { InterceptorService } from './service/interceptor.service';
 
 @Component({
   selector: 'app-root',

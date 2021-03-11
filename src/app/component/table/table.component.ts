@@ -1,7 +1,6 @@
 import { AfterViewInit, Component, Input, OnInit, ViewChild } from '@angular/core';
 import { MatDialog, MatTableDataSource } from '@angular/material';
 import { MatSort } from '@angular/material/sort';
-import { CardComponent } from '../card/card.component';
 import { DialogOverviewComponent } from '../dialog-overview/dialog-overview.component';
 
 @Component({
@@ -43,9 +42,6 @@ export class TableComponent implements OnInit, AfterViewInit {
       data: countryData,
     });
 
-    dialogRef.afterClosed().subscribe(result => {
-
-    });
   }
 
 }

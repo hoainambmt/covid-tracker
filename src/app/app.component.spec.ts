@@ -121,4 +121,14 @@ describe('AppComponent', () => {
 
     expect(app.getDataByCountry('VN')).toEqual(app.data.Countries[0]);
   });
+
+  it('getDataByCountry - data is undefined', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    // app.getSumaryData();
+    app.data = undefined;
+    // fixture.detectChanges()
+
+    expect(app.getDataByCountry('VN')).toEqual(undefined);
+  });
 });

@@ -22,7 +22,12 @@
     }
 
     tr.mat-row:hover {
-        background-color: #00cec9;
+        background-color: #3498db;
+        cursor: pointer;
+        td {
+            color: white;
+
+        }
 
     }
     
